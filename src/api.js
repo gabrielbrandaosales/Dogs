@@ -14,6 +14,7 @@ export const TOKEN_POST = (body) => {
 };
 
 export const USER_GET = (token) => {
+  console.log(token);
   return {
     url: API_URL + '/api/user',
     options: {
