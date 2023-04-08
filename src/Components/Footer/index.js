@@ -1,7 +1,7 @@
 import React from 'react';
 import { FooterContainer } from './styles';
 const Footer = () => {
-  return <FooterContainer>Alguns direitos reservados</FooterContainer>;
+  return <FooterContainer>Footer</FooterContainer>;
 };
 
 export default Footer;
