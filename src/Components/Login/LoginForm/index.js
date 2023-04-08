@@ -1,10 +1,11 @@
 import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Section } from './styles';
+import { Section, StyledLink } from './styles';
 import Input from '../../Forms/Input';
 import Button from '../../Forms/Button';
 import useForm from '../../../Hooks/UseForm';
 import { UserContext } from '../../../UserContext';
+import Error from '../../Helper/Error';
 
 const LoginForm = () => {
   const username = useForm();
@@ -19,9 +20,9 @@ const LoginForm = () => {
   };
 
   return (
-    <Section>
-      <form action="" onSubmit={handleLogin}>
-        <h1>Login</h1>
+    <Section className="animeLeft">
+      <h1 className="title">Login</h1>
+      <form className="form" onSubmit={handleLogin}>
         <Input label="Usuário" name="username" type="text" {...username} />
         <Input label="Senha" name="password" type="password" {...password} />
         {loading ? (
@@ -29,10 +30,16 @@ const LoginForm = () => {
         ) : (
           <Button>Entrar</Button>
         )}
-
-        {error && <>{error}</>}
+        <Error error={error} />
       </form>
-      <Link to="/login/create">Cadastro</Link>
+      <Link className="perdeu" to="/login/PasswordLost">
+        Perdeu a senha?
+      </Link>
+      <div className="cadastro">
+        <h2 className="subtitle">Cadastre-se</h2>
+        <p>Ainda não possui conta? Cadastre-se no site.</p>
+        <StyledLink to="/login/create">Cadastro</StyledLink>
+      </div>
     </Section>
   );
 };
