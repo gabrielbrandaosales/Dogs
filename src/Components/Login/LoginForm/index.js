@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Section, StyledLink } from './styles';
 import Input from '../../Forms/Input';
 import Button from '../../Forms/Button';
-import useForm from '../../../Hooks/UseForm';
+import useForm from '../../../Hooks/useForm';
 import { UserContext } from '../../../UserContext';
 import Error from '../../Helper/Error';
 

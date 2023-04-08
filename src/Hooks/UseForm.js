@@ -5,6 +5,11 @@ const types = {
     rgex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     message: 'Preencha um email válido',
   },
+  password: {
+    rgex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
+    message:
+      'A senha deve ter no mínimo 8 caracteres, com pelo menos, 1 letra maiscula, 1 letra minuscula e 1 digito.',
+  },
 };
 
 const useForm = (type) => {
