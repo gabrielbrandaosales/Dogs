@@ -10,13 +10,12 @@ const LoginForm = () => {
   const username = useForm();
   const password = useForm();
 
-  const { userLogin } = useContext(UserContext);
+  const { userLogin, error, login, loading } = useContext(UserContext);
 
   const handleLogin = async (event) => {
     event.preventDefault();
-    if (username.validate() && password.validate()) {
+    if (username.validate() && password.validate())
       userLogin(username.value, password.value);
-    }
   };
 
   return (
@@ -25,7 +24,13 @@ const LoginForm = () => {
         <h1>Login</h1>
         <Input label="Usuário" name="username" type="text" {...username} />
         <Input label="Senha" name="password" type="password" {...password} />
-        <Button>Entrar</Button>
+        {loading ? (
+          <Button disabled>Carregando...</Button>
+        ) : (
+          <Button>Entrar</Button>
+        )}
+
+        {error && <>{error}</>}
       </form>
       <Link to="/login/create">Cadastro</Link>
     </Section>
