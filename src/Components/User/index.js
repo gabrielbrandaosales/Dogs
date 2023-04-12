@@ -1,7 +1,23 @@
 import React from 'react';
+import { Section } from './styles';
+import { Route, Routes } from 'react-router-dom';
+import Feed from '../Feed';
+import UserHeader from './UserHeader';
+import UserPhotoPost from './UserPhotoPost';
+import UserStats from './UserStats';
 
 const User = () => {
-  return <div>Usuário</div>;
+  return (
+    <Section>
+      {' '}
+      <UserHeader />
+      <Routes>
+        <Route path="/" element={<Feed />} />
+        <Route path="/post" element={<UserPhotoPost />} />
+        <Route path="/stats" element={<UserStats />} />
+      </Routes>
+    </Section>
+  );
 };
 
 export default User;

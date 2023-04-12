@@ -11,7 +11,7 @@ const LoginForm = () => {
   const username = useForm();
   const password = useForm();
 
-  const { userLogin, error, login, loading } = useContext(UserContext);
+  const { userLogin, error, loading } = useContext(UserContext);
 
   const handleLogin = async (event) => {
     event.preventDefault();
