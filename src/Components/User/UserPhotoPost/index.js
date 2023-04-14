@@ -32,7 +32,7 @@ const UserPhotoPost = () => {
   };
   const handleImgChange = ({ target }) => {
     setImg({
-      preview: URL.createObjectURL(target.files[0]),
+      preview: target.files[0] && URL.createObjectURL(target.files[0]),
       raw: target.files[0],
     });
   };
