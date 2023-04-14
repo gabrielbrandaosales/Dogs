@@ -9,7 +9,7 @@ const UserHeader = () => {
   useEffect(() => {
     switch (pathname) {
       case '/conta/post':
-        setTitle('Publicar');
+        setTitle('Poste Sua Foto');
         break;
       case '/conta/stats':
         setTitle('Estatístico');

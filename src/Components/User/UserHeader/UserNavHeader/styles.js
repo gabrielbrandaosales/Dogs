@@ -140,7 +140,7 @@ export const MobileButton = styled.button`
       }
     `}
 
-  @media (min-width: 40rem) {
+  @media only screen and (min-width: 40rem) {
     display: none;
   }
 `;
