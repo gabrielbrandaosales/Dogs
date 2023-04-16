@@ -82,3 +82,15 @@ export const PHOTO_GET = (id) => {
     },
   };
 };
+
+export const COMMENT_POST = (id, body) => {
+  return {
+    url: `${API_URL}/api/comment/${id}`,
+    method: 'POST',
+    options: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${window.localStorage.getItem('token')}`,
+    },
+    body: JSON.stringify(body),
+  };
+};
