@@ -1,3 +1,4 @@
+import Image from '../../../Helper/Image';
 import { Photo } from './styles';
 
 const FeedPhotoItem = ({ photo, setModalPhoto }) => {
@@ -6,7 +7,7 @@ const FeedPhotoItem = ({ photo, setModalPhoto }) => {
   };
   return (
     <Photo onClick={handleClick}>
-      <img src={photo.src} alt={photo.title} />
+      <Image src={photo.src} alt={photo.title} />
       <span className="visualizacao">{photo.acessos}</span>
     </Photo>
   );
