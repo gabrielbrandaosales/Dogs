@@ -10,7 +10,7 @@ const Image = ({ alt, ...props }) => {
   return (
     <Wrapper>
       {skeleton && <div className="skeleton"></div>}
-      <img onLoad={handleLoad} alt={alt} {...props} />
+      <img className="img" onLoad={handleLoad} alt={alt} {...props} />
     </Wrapper>
   );
 };
