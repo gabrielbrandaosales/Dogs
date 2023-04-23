@@ -18,7 +18,6 @@ const UserHeaderNav = () => {
   useEffect(() => {
     setMobileMenu(false);
   }, [pathname]);
-  console.log(mobile);
   return (
     <>
       <MobileButton
