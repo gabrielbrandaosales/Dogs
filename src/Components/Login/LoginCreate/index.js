@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Section } from './styles';
 import Input from '../../Forms/Input';
 import Button from '../../Forms/Button';

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { MobileButton, Navegacao } from './styles';
 import { NavLink, useLocation } from 'react-router-dom';
 import { UserContext } from '../../../../UserContext';

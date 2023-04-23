@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Photo } from './styles';
 import { Link } from 'react-router-dom';
 import PhotoComments from '../PhotoComments';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Wrapper } from './styles';
 
 const Image = ({ alt, ...props }) => {

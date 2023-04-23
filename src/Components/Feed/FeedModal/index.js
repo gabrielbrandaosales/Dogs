@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Modal } from './styles';
 import useFetch from '../../../Hooks/useFetch';
 import { PHOTO_GET } from '../../../Api';
