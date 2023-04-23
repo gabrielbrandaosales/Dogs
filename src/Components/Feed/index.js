@@ -10,9 +10,9 @@ const Feed = ({ user }) => {
   useEffect(() => {
     let wait = false;
     const infiniteScroll = () => {
-      if (infitine) {
+      if (infinite) {
         const scroll = window.scrollY;
-        const height = window.body.offsetHeight - window.innerHeight;
+        const height = document.body.offsetHeight - window.innerHeight;
         if (scroll > height * 0.75 && !wait) {
           setPages((pages) => [...pages, pages.length + 1]);
           wait = true;
@@ -29,7 +29,7 @@ const Feed = ({ user }) => {
       window.removeEventListener('wheel', infiniteScroll);
       window.removeEventListener('scroll', infiniteScroll);
     };
-  }, [infitine]);
+  }, [infinite]);
 
   return (
     <div>
