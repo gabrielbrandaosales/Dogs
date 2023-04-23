@@ -11,4 +11,7 @@ export const Container = styled.div`
       line-height: 1.2rem;
     }
   }
+  .comment.single {
+    padding: 0px;
+  }
 `;

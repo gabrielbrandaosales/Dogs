@@ -14,6 +14,12 @@ export const Photo = styled.div`
   transform: scale(0.8);
   animation: scaleUp 0.3s forwards;
 
+  ${(props) =>
+    props.single && {
+      gridTemplateColumns: '1fr',
+      height: 'auto',
+    }}
+
   @keyframes scaleUp {
     to {
       opacity: initial;
@@ -23,14 +29,20 @@ export const Photo = styled.div`
 
   .details {
     padding: 2rem 2rem 0 2rem;
+    ${(props) =>
+      props.single && {
+        padding: '1rem 0 0 0px',
+      }}
   }
 
   .img {
     grid-row: 1/4;
-  }
-
-  .comments {
-    padding: 0 2rem;
+    ${(props) =>
+      props.single && {
+        gridRow: '1',
+        borderRadius: '.4rem',
+        overflow: 'hidden',
+      }}
   }
 
   .author {
