@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Modal } from './styles';
 import useFetch from '../../../Hooks/useFetch';
-import { PHOTO_GET } from '../../../Api';
+import { PHOTO_GET } from '../../../Api.js';
 import Error from '../../Helper/Error';
 import Loading from '../../Helper/Loading';
 import PhotoContent from '../../Photo/PhotoContent';
