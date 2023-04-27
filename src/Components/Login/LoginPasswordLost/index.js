@@ -13,7 +13,7 @@ const LoginPasswordLost = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (login.validate) {
+    if (login.validate()) {
       const { url, options } = PASSWORD_LOST({
         login: login.value,
         url: window.location.href.replace('lost', 'reset'),
