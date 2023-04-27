@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ReactComponent as Enviar } from '../../../Assets/enviar.svg';
 import useFetch from '../../../Hooks/useFetch';
-import { COMMENT_POST } from '../../../Api';
+import { COMMENT_POST } from '../../../Api.js';
 import Error from '../../Helper/Error';
 import { FormContent } from './styles';
 const PhotoCommentsForm = ({ id, setComments, single }) => {
