@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import FeedPhotoItem from './FeedPhotoItem';
 import useFetch from '../../../Hooks/useFetch';
-import { PHOTOS_GET } from '../../../Api.js';
+import { PHOTOS_GET } from '../../../Api/index.js';
 import Error from '../../Helper/Error';
 import Loading from '../../Helper/Loading';
 import { Feed } from './styles';

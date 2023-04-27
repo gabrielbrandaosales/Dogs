@@ -2,7 +2,7 @@ import React from 'react';
 import Head from '../../Helper/Head';
 import useFetch from '../../../Hooks/useFetch';
 import { useEffect } from 'react';
-import { STATS_GET } from '../../../Api.js';
+import { STATS_GET } from '../../../Api/index.js';
 import Loading from '../../Helper/Loading';
 import Error from '../../Helper/Error';
 import UserStatsGraphs from './UserStatsGraphs';
