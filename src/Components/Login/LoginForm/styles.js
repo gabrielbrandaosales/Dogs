@@ -22,6 +22,7 @@ export const Section = styled.section`
 
   .cadastro {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     p {
       margin-top: 2rem;
       margin-bottom: 2rem;
