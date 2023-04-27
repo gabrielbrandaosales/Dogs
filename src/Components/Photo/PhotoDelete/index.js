@@ -1,6 +1,6 @@
 import React from 'react';
 import { PHOTO_DELETE } from '../../../Api/index.js';
-import useFetch from '../../../Hooks/useFetch';
+import useFetch from '../../../Hooks/useFetch/index.js';
 import { Fragment } from './styles';
 
 const PhotoDelete = ({ id }) => {
